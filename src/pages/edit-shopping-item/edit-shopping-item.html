@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar color="ppl">
+    <ion-title>Edit Shopping Item</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label floating>Nome do Produto</ion-label>
+    <ion-input type="text" [(ngModel)]="shoppingItem.itemName"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Quantidade</ion-label>
+    <ion-input type="number" [(ngModel)]="shoppingItem.itemNumber"></ion-input>
+  </ion-item>
+  
+  <button ion-button block (click)="editShoppingItem(shoppingItem)" color = "ppl">Edit Item</button>
+
+
+</ion-content>
